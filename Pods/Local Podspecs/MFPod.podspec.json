@@ -1,0 +1,26 @@
+{
+  "name": "MFPod",
+  "version": "1.0.0",
+  "summary": "pod库练习",
+  "description": "A capable XCTestCase subclass",
+  "homepage": "https://github.com/Kobe-Bryant/MFPod/",
+  "license": "MIT",
+  "authors": {
+    "Win": "email@address.com"
+  },
+  "source": {
+    "git": "https://github.com/Kobe-Bryant/MFPod.git",
+    "tag": "1.0.0"
+  },
+  "source_files": [
+    "*",
+    "*/**/*.{h,m}"
+  ],
+  "requires_arc": true,
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}
