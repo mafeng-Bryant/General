@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		49C06A24040325F3FFBF5436 /* Pods_General.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4E710441B0F07D010A79CF /* Pods_General.framework */; };
 		E26D6F4D1CF034E600CCDD6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F4C1CF034E600CCDD6A /* main.m */; };
-		E26D6F501CF034E600CCDD6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F4F1CF034E600CCDD6A /* AppDelegate.m */; };
-		E26D6F531CF034E600CCDD6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F521CF034E600CCDD6A /* ViewController.m */; };
 		E26D6F591CF034E600CCDD6A /* General.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F571CF034E600CCDD6A /* General.xcdatamodeld */; };
 		E26D6F5B1CF034E600CCDD6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F5A1CF034E600CCDD6A /* Images.xcassets */; };
 		E26D6F5E1CF034E600CCDD6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F5C1CF034E600CCDD6A /* LaunchScreen.storyboard */; };
 		E26D6F691CF034E600CCDD6A /* GeneralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F681CF034E600CCDD6A /* GeneralTests.m */; };
 		E26D6F741CF034E600CCDD6A /* GeneralUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F731CF034E600CCDD6A /* GeneralUITests.m */; };
+		E29700221CF437A800C49658 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700171CF437A800C49658 /* AppDelegate.m */; };
+		E29700231CF437A800C49658 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700191CF437A800C49658 /* ViewController.m */; };
+		E297002B1CF43E2200C49658 /* MFNetworkingConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E297002A1CF43E2200C49658 /* MFNetworkingConfig.m */; };
+		E29700321CF447F600C49658 /* NSObject+ProtocolAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700311CF447F600C49658 /* NSObject+ProtocolAddition.m */; };
+		E29700391CF4489100C49658 /* MFRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700381CF4489100C49658 /* MFRequest.m */; };
+		E297003F1CF4496100C49658 /* MFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E297003E1CF4496100C49658 /* MFNetworking.m */; };
+		E29700421CF449F600C49658 /* MFNetworkingLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700411CF449F600C49658 /* MFNetworkingLogger.m */; };
+		E297004E1CF44C1F00C49658 /* MFNSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = E297004D1CF44C1F00C49658 /* MFNSString+Addition.m */; };
+		E29700541CF44F0800C49658 /* MFNetworkingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700511CF44F0800C49658 /* MFNetworkingHelper.m */; };
+		E29700551CF44F0800C49658 /* MFHostHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700531CF44F0800C49658 /* MFHostHelper.m */; };
+		E29700591CF4521200C49658 /* PPStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700581CF4521200C49658 /* PPStoreHelper.m */; };
+		E297005C1CF4532F00C49658 /* PPRequest+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E297005B1CF4532F00C49658 /* PPRequest+Extension.m */; };
+		E29700671CF453E400C49658 /* PPApiStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E297005E1CF453E400C49658 /* PPApiStatus.m */; };
+		E29700681CF453E400C49658 /* PPAPIStatusGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700601CF453E400C49658 /* PPAPIStatusGenerator.m */; };
+		E29700691CF453E400C49658 /* PPCommonHeadersGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700621CF453E400C49658 /* PPCommonHeadersGenerator.m */; };
+		E297006A1CF453E400C49658 /* PPCommonParametersGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700641CF453E400C49658 /* PPCommonParametersGenerator.m */; };
+		E297006B1CF453E400C49658 /* PPSignatureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700661CF453E400C49658 /* PPSignatureGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +56,6 @@
 		AD4E710441B0F07D010A79CF /* Pods_General.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_General.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26D6F481CF034E600CCDD6A /* General.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = General.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26D6F4C1CF034E600CCDD6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E26D6F4E1CF034E600CCDD6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E26D6F4F1CF034E600CCDD6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E26D6F511CF034E600CCDD6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E26D6F521CF034E600CCDD6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E26D6F581CF034E600CCDD6A /* General.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = General.xcdatamodel; sourceTree = "<group>"; };
 		E26D6F5A1CF034E600CCDD6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E26D6F5D1CF034E600CCDD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +67,42 @@
 		E26D6F731CF034E600CCDD6A /* GeneralUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralUITests.m; sourceTree = "<group>"; };
 		E26D6F751CF034E600CCDD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E280AE431CF1B82A00F3BDFF /* XCAsyncTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCAsyncTestCase.framework; path = "../../Library/Developer/Xcode/DerivedData/General-dpapxwvmpuiphaarlwyqsdicfkwe/Build/Products/Debug-iphonesimulator/XCAsyncTestCase/XCAsyncTestCase.framework"; sourceTree = "<group>"; };
+		E29700161CF437A800C49658 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Controllers/AppDelegate.h; sourceTree = "<group>"; };
+		E29700171CF437A800C49658 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Controllers/AppDelegate.m; sourceTree = "<group>"; };
+		E29700181CF437A800C49658 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E29700191CF437A800C49658 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E29700291CF43E2200C49658 /* MFNetworkingConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkingConfig.h; sourceTree = "<group>"; };
+		E297002A1CF43E2200C49658 /* MFNetworkingConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkingConfig.m; sourceTree = "<group>"; };
+		E297002C1CF4411F00C49658 /* MFNetworkingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkingHeader.h; sourceTree = "<group>"; };
+		E29700301CF447F600C49658 /* NSObject+ProtocolAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ProtocolAddition.h"; sourceTree = "<group>"; };
+		E29700311CF447F600C49658 /* NSObject+ProtocolAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ProtocolAddition.m"; sourceTree = "<group>"; };
+		E29700371CF4489100C49658 /* MFRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRequest.h; sourceTree = "<group>"; };
+		E29700381CF4489100C49658 /* MFRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRequest.m; sourceTree = "<group>"; };
+		E297003D1CF4496100C49658 /* MFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworking.h; sourceTree = "<group>"; };
+		E297003E1CF4496100C49658 /* MFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworking.m; sourceTree = "<group>"; };
+		E29700401CF449F600C49658 /* MFNetworkingLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkingLogger.h; sourceTree = "<group>"; };
+		E29700411CF449F600C49658 /* MFNetworkingLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkingLogger.m; sourceTree = "<group>"; };
+		E297004C1CF44C1F00C49658 /* MFNSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFNSString+Addition.h"; sourceTree = "<group>"; };
+		E297004D1CF44C1F00C49658 /* MFNSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFNSString+Addition.m"; sourceTree = "<group>"; };
+		E297004F1CF44E2800C49658 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		E29700501CF44F0800C49658 /* MFNetworkingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkingHelper.h; sourceTree = "<group>"; };
+		E29700511CF44F0800C49658 /* MFNetworkingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkingHelper.m; sourceTree = "<group>"; };
+		E29700521CF44F0800C49658 /* MFHostHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHostHelper.h; sourceTree = "<group>"; };
+		E29700531CF44F0800C49658 /* MFHostHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHostHelper.m; sourceTree = "<group>"; };
+		E29700571CF4521200C49658 /* PPStoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPStoreHelper.h; path = ../PPStoreHelper.h; sourceTree = "<group>"; };
+		E29700581CF4521200C49658 /* PPStoreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPStoreHelper.m; path = ../PPStoreHelper.m; sourceTree = "<group>"; };
+		E297005A1CF4532F00C49658 /* PPRequest+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PPRequest+Extension.h"; sourceTree = "<group>"; };
+		E297005B1CF4532F00C49658 /* PPRequest+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PPRequest+Extension.m"; sourceTree = "<group>"; };
+		E297005D1CF453E400C49658 /* PPApiStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPApiStatus.h; sourceTree = "<group>"; };
+		E297005E1CF453E400C49658 /* PPApiStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPApiStatus.m; sourceTree = "<group>"; };
+		E297005F1CF453E400C49658 /* PPAPIStatusGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAPIStatusGenerator.h; sourceTree = "<group>"; };
+		E29700601CF453E400C49658 /* PPAPIStatusGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAPIStatusGenerator.m; sourceTree = "<group>"; };
+		E29700611CF453E400C49658 /* PPCommonHeadersGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCommonHeadersGenerator.h; sourceTree = "<group>"; };
+		E29700621CF453E400C49658 /* PPCommonHeadersGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCommonHeadersGenerator.m; sourceTree = "<group>"; };
+		E29700631CF453E400C49658 /* PPCommonParametersGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCommonParametersGenerator.h; sourceTree = "<group>"; };
+		E29700641CF453E400C49658 /* PPCommonParametersGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCommonParametersGenerator.m; sourceTree = "<group>"; };
+		E29700651CF453E400C49658 /* PPSignatureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSignatureGenerator.h; sourceTree = "<group>"; };
+		E29700661CF453E400C49658 /* PPSignatureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSignatureGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,11 +175,17 @@
 			isa = PBXGroup;
 			children = (
 				E280AE461CF1BB1600F3BDFF /* Source */,
-				E26D6F4E1CF034E600CCDD6A /* AppDelegate.h */,
-				E26D6F4F1CF034E600CCDD6A /* AppDelegate.m */,
-				E26D6F511CF034E600CCDD6A /* ViewController.h */,
-				E26D6F521CF034E600CCDD6A /* ViewController.m */,
-				E26D6F5A1CF034E600CCDD6A /* Images.xcassets */,
+				E297001F1CF437A800C49658 /* ThirdParty */,
+				E297001E1CF437A800C49658 /* Networking */,
+				E29700201CF437A800C49658 /* URLRouter */,
+				E297001A1CF437A800C49658 /* DataBase */,
+				E297001B1CF437A800C49658 /* General */,
+				E297001C1CF437A800C49658 /* JSEngine */,
+				E297001D1CF437A800C49658 /* Model */,
+				E29700211CF437A800C49658 /* View */,
+				E29700151CF437A800C49658 /* Controllers */,
+				E29700161CF437A800C49658 /* AppDelegate.h */,
+				E29700171CF437A800C49658 /* AppDelegate.m */,
 				E26D6F5C1CF034E600CCDD6A /* LaunchScreen.storyboard */,
 				E26D6F5F1CF034E600CCDD6A /* Info.plist */,
 				E26D6F571CF034E600CCDD6A /* General.xcdatamodeld */,
@@ -170,8 +223,154 @@
 		E280AE461CF1BB1600F3BDFF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E26D6F5A1CF034E600CCDD6A /* Images.xcassets */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		E29700151CF437A800C49658 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E29700181CF437A800C49658 /* ViewController.h */,
+				E29700191CF437A800C49658 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E297001A1CF437A800C49658 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		E297001B1CF437A800C49658 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				E29700561CF4520C00C49658 /* Helper */,
+				E297004F1CF44E2800C49658 /* Macros.h */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		E297001C1CF437A800C49658 /* JSEngine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSEngine;
+			sourceTree = "<group>";
+		};
+		E297001D1CF437A800C49658 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E297001E1CF437A800C49658 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E297002C1CF4411F00C49658 /* MFNetworkingHeader.h */,
+				E29700241CF43AB800C49658 /* Assistants */,
+				E29700251CF43AB800C49658 /* Category */,
+				E29700261CF43AB800C49658 /* Core */,
+				E29700271CF43AB800C49658 /* Helper */,
+				E29700281CF43AB800C49658 /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E297001F1CF437A800C49658 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		E29700201CF437A800C49658 /* URLRouter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = URLRouter;
+			sourceTree = "<group>";
+		};
+		E29700211CF437A800C49658 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E29700241CF43AB800C49658 /* Assistants */ = {
+			isa = PBXGroup;
+			children = (
+				E297005D1CF453E400C49658 /* PPApiStatus.h */,
+				E297005E1CF453E400C49658 /* PPApiStatus.m */,
+				E297005F1CF453E400C49658 /* PPAPIStatusGenerator.h */,
+				E29700601CF453E400C49658 /* PPAPIStatusGenerator.m */,
+				E29700611CF453E400C49658 /* PPCommonHeadersGenerator.h */,
+				E29700621CF453E400C49658 /* PPCommonHeadersGenerator.m */,
+				E29700631CF453E400C49658 /* PPCommonParametersGenerator.h */,
+				E29700641CF453E400C49658 /* PPCommonParametersGenerator.m */,
+				E29700651CF453E400C49658 /* PPSignatureGenerator.h */,
+				E29700661CF453E400C49658 /* PPSignatureGenerator.m */,
+			);
+			path = Assistants;
+			sourceTree = "<group>";
+		};
+		E29700251CF43AB800C49658 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E297005A1CF4532F00C49658 /* PPRequest+Extension.h */,
+				E297005B1CF4532F00C49658 /* PPRequest+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E29700261CF43AB800C49658 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E29700371CF4489100C49658 /* MFRequest.h */,
+				E29700381CF4489100C49658 /* MFRequest.m */,
+				E29700301CF447F600C49658 /* NSObject+ProtocolAddition.h */,
+				E29700311CF447F600C49658 /* NSObject+ProtocolAddition.m */,
+				E29700291CF43E2200C49658 /* MFNetworkingConfig.h */,
+				E297002A1CF43E2200C49658 /* MFNetworkingConfig.m */,
+				E297003D1CF4496100C49658 /* MFNetworking.h */,
+				E297003E1CF4496100C49658 /* MFNetworking.m */,
+				E29700401CF449F600C49658 /* MFNetworkingLogger.h */,
+				E29700411CF449F600C49658 /* MFNetworkingLogger.m */,
+				E297004C1CF44C1F00C49658 /* MFNSString+Addition.h */,
+				E297004D1CF44C1F00C49658 /* MFNSString+Addition.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E29700271CF43AB800C49658 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E29700501CF44F0800C49658 /* MFNetworkingHelper.h */,
+				E29700511CF44F0800C49658 /* MFNetworkingHelper.m */,
+				E29700521CF44F0800C49658 /* MFHostHelper.h */,
+				E29700531CF44F0800C49658 /* MFHostHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E29700281CF43AB800C49658 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E29700561CF4520C00C49658 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E29700571CF4521200C49658 /* PPStoreHelper.h */,
+				E29700581CF4521200C49658 /* PPStoreHelper.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,10 +553,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26D6F531CF034E600CCDD6A /* ViewController.m in Sources */,
-				E26D6F501CF034E600CCDD6A /* AppDelegate.m in Sources */,
+				E297002B1CF43E2200C49658 /* MFNetworkingConfig.m in Sources */,
+				E297004E1CF44C1F00C49658 /* MFNSString+Addition.m in Sources */,
+				E297003F1CF4496100C49658 /* MFNetworking.m in Sources */,
+				E29700551CF44F0800C49658 /* MFHostHelper.m in Sources */,
+				E297006B1CF453E400C49658 /* PPSignatureGenerator.m in Sources */,
 				E26D6F591CF034E600CCDD6A /* General.xcdatamodeld in Sources */,
+				E297005C1CF4532F00C49658 /* PPRequest+Extension.m in Sources */,
+				E297006A1CF453E400C49658 /* PPCommonParametersGenerator.m in Sources */,
+				E29700681CF453E400C49658 /* PPAPIStatusGenerator.m in Sources */,
 				E26D6F4D1CF034E600CCDD6A /* main.m in Sources */,
+				E29700321CF447F600C49658 /* NSObject+ProtocolAddition.m in Sources */,
+				E29700591CF4521200C49658 /* PPStoreHelper.m in Sources */,
+				E29700231CF437A800C49658 /* ViewController.m in Sources */,
+				E29700671CF453E400C49658 /* PPApiStatus.m in Sources */,
+				E29700541CF44F0800C49658 /* MFNetworkingHelper.m in Sources */,
+				E29700221CF437A800C49658 /* AppDelegate.m in Sources */,
+				E29700391CF4489100C49658 /* MFRequest.m in Sources */,
+				E29700691CF453E400C49658 /* PPCommonHeadersGenerator.m in Sources */,
+				E29700421CF449F600C49658 /* MFNetworkingLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
