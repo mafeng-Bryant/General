@@ -12,6 +12,6 @@
 
 @interface PPAPIStatusGenerator : NSObject
 
-+ (PPApiStatus *)generateApiStatusWithRequest:(MFRequest *)request;
++ (PPApiStatus *)generateApiStatusWithRequest:(PPRequest *)request;
 
 @end

@@ -17,5 +17,6 @@ target 'General' do
   pod 'Masonry'
   pod 'CardIO'
   pod 'VExtensions'
+  pod 'VDevice'
 #  pod 'MFPodDemo', :git => 'https://github.com/mafeng-Bryant/MFPodDemo.git'
 end

@@ -1,0 +1,6 @@
+framework module VExtensions {
+  umbrella header "VExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

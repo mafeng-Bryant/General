@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MFRequest.h"
+#import "PPRequest.h"
 
 @interface MFNetworkingLogger : NSObject
 
@@ -17,7 +17,7 @@
                  headers:(NSDictionary *)headers
                   params:(id)params;
 
-+ (void)printResponse:(MFRequest *)request
++ (void)printResponse:(PPRequest *)request
                 error:(NSError *)error;
 
 @end

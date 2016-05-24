@@ -10,7 +10,7 @@
 #import "PPStoreHelper.h"
 #import "AppDelegate.h"
 #import "MFNetworkingConfig.h"
-#import "Macros.h"
+#import "VMacros.h"
 
 @implementation MFHostObject
 @synthesize title;

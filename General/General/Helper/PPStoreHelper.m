@@ -8,7 +8,7 @@
 
 #import "PPStoreHelper.h"
 #import "SFHFKeychainUtils.h"
-#import "Macros.h"
+#import "VMacros.h"
 
 
 static NSString * const kServiceDomain                     = @"com.interfocusllc.patpat";

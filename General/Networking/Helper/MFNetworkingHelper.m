@@ -12,7 +12,9 @@
 #import "PPCommonParametersGenerator.h"
 #import "PPSignatureGenerator.h"
 #import "AppDelegate.h"
-#import "Macros.h"
+#import "VMacros.h"
+#import "NSObject+Extensions.h"
+
 
 @interface MFNetworkingHelper()
 {
@@ -75,18 +77,18 @@
         [request status];  //请求成功了生成业务相关的status
         if (request.status && !request.status.normal) { //在这里将NSError和PPStatus合并为一个error
             NSMutableDictionary *descriptionDict = [NSMutableDictionary dictionary];
-            descriptionDict[NSLocalizedErrorSummaryKey] = PPString(SHOPPINGCART_OOPS);
+            descriptionDict[NSLocalizedErrorSummaryKey] =@"";
             descriptionDict[NSLocalizedDescriptionKey] = request.status.localizedDescription;
             request.error = [NSError errorWithDomain:request.status.domain code:[request.status.code integerValue] userInfo:descriptionDict];
         }
     }else{
         //重新设置请求失败的error信息
         NSMutableDictionary *descriptionDict = [NSMutableDictionary dictionary];
-        if (![PPNetworking isConnected]) { //lost network
-            descriptionDict[NSLocalizedErrorSummaryKey]=PPString(NETWORKERROR);
-            descriptionDict[NSLocalizedDescriptionKey] = PPString(DISCONNECTEDINTERNET);
+        if (![MFNetworking isConnected]) { //lost network
+            descriptionDict[NSLocalizedErrorSummaryKey]= @"";
+            descriptionDict[NSLocalizedDescriptionKey] = @"";
         }else{
-            descriptionDict[NSLocalizedErrorSummaryKey]=PPString(REQUESTERROR);
+            descriptionDict[NSLocalizedErrorSummaryKey]= @"";
             descriptionDict[NSLocalizedDescriptionKey] = request.error.localizedDescription;
         }
         request.error = [NSError errorWithDomain:request.error.domain code:request.error.code userInfo:descriptionDict];
@@ -95,11 +97,11 @@
 
 #pragma mark PPNetworkingInterceptor
 
-- (void)interceptResponse:(MFRequest *)request
+- (void)interceptResponse:(PPRequest *)request
 {
     PPApiStatus *apistatus = request.status;
     if (apistatus&&[apistatus.code isEqualToString:@"1001"]) { //token过期了
-        apistatus.localizedDescription = FormatString(apistatus.localizedDescription,PPString(AUTHENTICATIONLOGINAGAIN));
+        apistatus.localizedDescription = FormatString(apistatus.localizedDescription,@"");
         [self verifyAccount:apistatus];
         apistatus.localizedDescription = @"";
     }
@@ -110,16 +112,16 @@
 //检查帐号token是否有效，如果过期就跳到登录界面
 - (void)verifyAccount:(PPApiStatus *)status
 {
-    if (_isShowingLoginAlert || ![PPSetting isAuthValid]) {
-        return;
-    }
-    _isShowingLoginAlert = YES;
-    [UIAlertView showAlertViewWithTitle:nil  message:status.localizedDescription  cancelButtonTitle:nil
-                      otherButtonTitles:@[PPString(OK_STRING)]
-                              onDismiss:^(NSInteger buttonIndex) {
-                                  _isShowingLoginAlert = NO;
-                                  [[AppDelegate appDelegate]signOut];
-                              } onCancel:nil];
+//    if (_isShowingLoginAlert || ![PPSetting isAuthValid]) {
+//        return;
+//    }
+//    _isShowingLoginAlert = YES;
+//    [UIAlertView showAlertViewWithTitle:nil  message:status.localizedDescription  cancelButtonTitle:nil
+//                      otherButtonTitles:@[PPString(OK_STRING)]
+//                              onDismiss:^(NSInteger buttonIndex) {
+//                                  _isShowingLoginAlert = NO;
+//                                  [[AppDelegate appDelegate]signOut];
+//                              } onCancel:nil];
 }
 
 @end

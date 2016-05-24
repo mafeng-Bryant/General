@@ -68,7 +68,7 @@ static NSString *const RequestMethodDelete  = @"DELETE";
     return acceptableContentTypes;
 }
 
-- (void)addRequest:(MFRequest *)request
+- (void)addRequest:(PPRequest *)request
 {
     //request serializer type
     if (request.child && [request.child respondsToSelector:@selector(requestSerializer)]) {
@@ -186,7 +186,7 @@ static NSString *const RequestMethodDelete  = @"DELETE";
 {
     
     NSString *key = [self requestHashKey:operation];
-    MFRequest *request = _requestsRecord[key];
+    PPRequest *request = _requestsRecord[key];
     request.error = error;
     [MFNetworkingLogger printResponse:request error:request.error];
 
@@ -218,19 +218,19 @@ static NSString *const RequestMethodDelete  = @"DELETE";
 - (void)cancelAllRequests {
     NSDictionary *copyRecord = [_requestsRecord copy];
     for (NSString *key in copyRecord) {
-        MFRequest *request = copyRecord[key];
+        PPRequest *request = copyRecord[key];
         [self cancelRequest:request];
     }
 }
 
-- (void)cancelRequest:(MFRequest *)request {
+- (void)cancelRequest:(PPRequest *)request {
     [request.requestOperation cancel];
     [self removeOperation:request.requestOperation];
     [request clearCompletionBlock];
 }
 
 #pragma mark Private methords
-- (NSString *)buildRequestUrl:(MFRequest *)request {
+- (NSString *)buildRequestUrl:(PPRequest *)request {
     NSString *path = @"";
     if (request.child && [request.child respondsToSelector:@selector(path)] && [request.child path]) {
         path = [request.child path];
@@ -260,7 +260,7 @@ static NSString *const RequestMethodDelete  = @"DELETE";
     return key;
 }
 
-- (void)addOperation:(MFRequest *)request {
+- (void)addOperation:(PPRequest *)request {
     if (request.requestOperation != nil) {
         NSString *key = [self requestHashKey:request.requestOperation];
         _requestsRecord[key] = request;

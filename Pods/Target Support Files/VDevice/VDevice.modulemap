@@ -1,0 +1,6 @@
+framework module VDevice {
+  umbrella header "VDevice-umbrella.h"
+
+  export *
+  module * { export * }
+}

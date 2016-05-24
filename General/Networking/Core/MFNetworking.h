@@ -7,7 +7,7 @@
 //
 
 #import "AFHTTPSessionManager.h"
-#import "MFRequest.h"
+#import "PPRequest.h"
 #import "MFNetworkingConfig.h"
 
 @interface MFNetworking : NSObject
@@ -19,14 +19,14 @@
  *
  *  @param request 需要添加的请求
  */
-- (void)addRequest:(MFRequest *)request;
+- (void)addRequest:(PPRequest *)request;
 
 /**
  *  取消请求
  *
  *  @param request 需要取消的请求
  */
-- (void)cancelRequest:(MFRequest *)request;
+- (void)cancelRequest:(PPRequest *)request;
 
 /**
  *  取消所有请求

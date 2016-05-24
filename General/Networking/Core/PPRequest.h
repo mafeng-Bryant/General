@@ -11,8 +11,10 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 #import "MFNetworkingConfig.h"
+#import "PPApiStatus.h"
 
-@class MFRequest;
+
+@class PPRequest;
 
 //request methord
 typedef enum{
@@ -24,9 +26,9 @@ typedef enum{
 }MFRequestMethod;
 
 //block callback
-typedef void (^RequestSuccessCompletionBlock)(MFRequest *request);
-typedef void (^RequestFailureCompletionBlock)(MFRequest *request,NSError *error);
-typedef void (^RequestCompletionHandler)(id result,MFRequest *request,NSError *error);
+typedef void (^RequestSuccessCompletionBlock)(PPRequest *request);
+typedef void (^RequestFailureCompletionBlock)(PPRequest *request,NSError *error);
+typedef void (^RequestCompletionHandler)(id result,PPRequest *request,NSError *error);
 typedef void (^PPRequestMultipartFormDataBlock)(id<AFMultipartFormData> formData);
 typedef void (^PPRequestUploadProgressBlock)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite);
 
@@ -116,7 +118,7 @@ typedef void (^PPRequestUploadProgressBlock)(NSUInteger bytesWritten, long long 
 @protocol PPRequestInjector <NSObject>
 
 @optional
-- (void)initInjector:(MFRequest *)request;
+- (void)initInjector:(PPRequest *)request;
 
 @end
 
@@ -124,7 +126,7 @@ typedef void (^PPRequestUploadProgressBlock)(NSUInteger bytesWritten, long long 
 @protocol PPResponseInterceptor <NSObject>
 
 @optional
-- (void)interceptResponse:(MFRequest *)request;
+- (void)interceptResponse:(PPRequest *)request;
 
 @end
 
@@ -142,11 +144,11 @@ typedef void (^PPRequestUploadProgressBlock)(NSUInteger bytesWritten, long long 
 @protocol PPResponseReformer <NSObject>
 
 @optional
-- (void)responseReormer:(MFRequest *)request;
+- (void)responseReormer:(PPRequest *)request;
 
 @end
 
-@interface MFRequest : NSObject
+@interface PPRequest : NSObject
 @property (nonatomic) NSInteger tag;
 @property (nonatomic, strong) NSDictionary *userInfo;
 @property (nonatomic, strong) AFHTTPRequestOperation *requestOperation;

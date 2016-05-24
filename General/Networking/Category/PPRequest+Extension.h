@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MFRequest.h"
-#import "PPApiStatus.h"
+#import "PPRequest.h"
 
-@interface MFRequest (MFRequest_Extension)<PPRequestInjector>
+@interface PPRequest (PPRequest_Extension)<PPRequestInjector>
 
 @property (nonatomic, strong, readonly) PPApiStatus *status; //内容业务逻辑状态
 @property (nonatomic, strong, readonly) id content; //kResponseKeyContent 内容
+
 
 @end

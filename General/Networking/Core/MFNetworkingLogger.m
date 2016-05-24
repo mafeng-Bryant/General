@@ -45,7 +45,7 @@
     NSLog(@"%@", logString);
 }
 
-+ (void)printResponse:(MFRequest *)request
++ (void)printResponse:(PPRequest *)request
                 error:(NSError *)error
 {
     if (![self isPrintLogType]) {

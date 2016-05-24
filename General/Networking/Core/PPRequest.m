@@ -6,15 +6,15 @@
 //  Copyright (c) 2014年 http://www.patpat.com. All rights reserved.
 //
 
-#import "MFRequest.h"
+#import "PPRequest.h"
 #import "MFNetworking.h"
 #import "NSObject+ProtocolAddition.h"
 
-@interface MFRequest()
+@interface PPRequest()
 
 @end
 
-@implementation MFRequest
+@implementation PPRequest
 
 - (id)init {
     self = [super init];

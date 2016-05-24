@@ -9,14 +9,14 @@
 #import "PPRequest+Extension.h"
 #import "PPAPIStatusGenerator.h"
 #import "MFNetworkingHelper.h"
-#import "Macros.h"
+#import <objc/runtime.h>
 
 //response key
 static NSString *const kResponseKeyContent         = @"content";
 
 static void *PPNetworkingApiStatus;
 
-@implementation MFRequest (MFRequest_Extension)
+@implementation PPRequest (PPRequest_Extension)
 @dynamic status;
 
 #pragma mark Property
@@ -29,6 +29,7 @@ static void *PPNetworkingApiStatus;
 }
 
 - (PPApiStatus *)status{
+    
     id _status = objc_getAssociatedObject(self,&PPNetworkingApiStatus);
     if (!_status) {
         _status = [PPAPIStatusGenerator generateApiStatusWithRequest:self];
@@ -43,7 +44,7 @@ static void *PPNetworkingApiStatus;
 
 #pragma mark PPRequestInjector
 
-- (void)initInjector:(MFRequest *)request
+- (void)initInjector:(PPRequest *)request
 {
     //加载各种reformer和interceptor
     MFNetworkingHelper *manager = [MFNetworkingHelper sharedInstance];

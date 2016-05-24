@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '50E95076E4F3789FEAD137E3A775BB2B'
+               BlueprintIdentifier = '21DDB1CC705CB5463D0159CD5401D370'
                BlueprintName = 'SFHFKeychainUtils'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SFHFKeychainUtils.framework'>

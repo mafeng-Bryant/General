@@ -14,7 +14,7 @@ static NSString *const kResponseKeyMsg               = @"msg";
 
 @implementation PPAPIStatusGenerator
 
-+ (PPApiStatus *)generateApiStatusWithRequest:(MFRequest*)request
++ (PPApiStatus *)generateApiStatusWithRequest:(PPRequest*)request
 {
     NSDictionary *responseResult = [request responseObject];
     if (isValidDictionary(responseResult)) {

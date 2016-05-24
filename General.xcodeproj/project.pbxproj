@@ -18,19 +18,20 @@
 		E29700231CF437A800C49658 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700191CF437A800C49658 /* ViewController.m */; };
 		E297002B1CF43E2200C49658 /* MFNetworkingConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E297002A1CF43E2200C49658 /* MFNetworkingConfig.m */; };
 		E29700321CF447F600C49658 /* NSObject+ProtocolAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700311CF447F600C49658 /* NSObject+ProtocolAddition.m */; };
-		E29700391CF4489100C49658 /* MFRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700381CF4489100C49658 /* MFRequest.m */; };
+		E29700391CF4489100C49658 /* PPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700381CF4489100C49658 /* PPRequest.m */; };
 		E297003F1CF4496100C49658 /* MFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E297003E1CF4496100C49658 /* MFNetworking.m */; };
 		E29700421CF449F600C49658 /* MFNetworkingLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700411CF449F600C49658 /* MFNetworkingLogger.m */; };
 		E297004E1CF44C1F00C49658 /* MFNSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = E297004D1CF44C1F00C49658 /* MFNSString+Addition.m */; };
 		E29700541CF44F0800C49658 /* MFNetworkingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700511CF44F0800C49658 /* MFNetworkingHelper.m */; };
 		E29700551CF44F0800C49658 /* MFHostHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700531CF44F0800C49658 /* MFHostHelper.m */; };
-		E29700591CF4521200C49658 /* PPStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700581CF4521200C49658 /* PPStoreHelper.m */; };
-		E297005C1CF4532F00C49658 /* PPRequest+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E297005B1CF4532F00C49658 /* PPRequest+Extension.m */; };
 		E29700671CF453E400C49658 /* PPApiStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E297005E1CF453E400C49658 /* PPApiStatus.m */; };
 		E29700681CF453E400C49658 /* PPAPIStatusGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700601CF453E400C49658 /* PPAPIStatusGenerator.m */; };
 		E29700691CF453E400C49658 /* PPCommonHeadersGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700621CF453E400C49658 /* PPCommonHeadersGenerator.m */; };
 		E297006A1CF453E400C49658 /* PPCommonParametersGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700641CF453E400C49658 /* PPCommonParametersGenerator.m */; };
 		E297006B1CF453E400C49658 /* PPSignatureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700661CF453E400C49658 /* PPSignatureGenerator.m */; };
+		E297006E1CF459AF00C49658 /* PPStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E297006D1CF459AF00C49658 /* PPStoreHelper.m */; };
+		E29700721CF45A0500C49658 /* MFUIDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700711CF45A0500C49658 /* MFUIDevice.m */; };
+		E29700801CF4635F00C49658 /* PPRequest+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E297007F1CF4635F00C49658 /* PPRequest+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,23 +77,18 @@
 		E297002C1CF4411F00C49658 /* MFNetworkingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkingHeader.h; sourceTree = "<group>"; };
 		E29700301CF447F600C49658 /* NSObject+ProtocolAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ProtocolAddition.h"; sourceTree = "<group>"; };
 		E29700311CF447F600C49658 /* NSObject+ProtocolAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ProtocolAddition.m"; sourceTree = "<group>"; };
-		E29700371CF4489100C49658 /* MFRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRequest.h; sourceTree = "<group>"; };
-		E29700381CF4489100C49658 /* MFRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRequest.m; sourceTree = "<group>"; };
+		E29700371CF4489100C49658 /* PPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRequest.h; sourceTree = "<group>"; };
+		E29700381CF4489100C49658 /* PPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRequest.m; sourceTree = "<group>"; };
 		E297003D1CF4496100C49658 /* MFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworking.h; sourceTree = "<group>"; };
 		E297003E1CF4496100C49658 /* MFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworking.m; sourceTree = "<group>"; };
 		E29700401CF449F600C49658 /* MFNetworkingLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkingLogger.h; sourceTree = "<group>"; };
 		E29700411CF449F600C49658 /* MFNetworkingLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkingLogger.m; sourceTree = "<group>"; };
 		E297004C1CF44C1F00C49658 /* MFNSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFNSString+Addition.h"; sourceTree = "<group>"; };
 		E297004D1CF44C1F00C49658 /* MFNSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFNSString+Addition.m"; sourceTree = "<group>"; };
-		E297004F1CF44E2800C49658 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		E29700501CF44F0800C49658 /* MFNetworkingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkingHelper.h; sourceTree = "<group>"; };
 		E29700511CF44F0800C49658 /* MFNetworkingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkingHelper.m; sourceTree = "<group>"; };
 		E29700521CF44F0800C49658 /* MFHostHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHostHelper.h; sourceTree = "<group>"; };
 		E29700531CF44F0800C49658 /* MFHostHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHostHelper.m; sourceTree = "<group>"; };
-		E29700571CF4521200C49658 /* PPStoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPStoreHelper.h; path = ../PPStoreHelper.h; sourceTree = "<group>"; };
-		E29700581CF4521200C49658 /* PPStoreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPStoreHelper.m; path = ../PPStoreHelper.m; sourceTree = "<group>"; };
-		E297005A1CF4532F00C49658 /* PPRequest+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PPRequest+Extension.h"; sourceTree = "<group>"; };
-		E297005B1CF4532F00C49658 /* PPRequest+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PPRequest+Extension.m"; sourceTree = "<group>"; };
 		E297005D1CF453E400C49658 /* PPApiStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPApiStatus.h; sourceTree = "<group>"; };
 		E297005E1CF453E400C49658 /* PPApiStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPApiStatus.m; sourceTree = "<group>"; };
 		E297005F1CF453E400C49658 /* PPAPIStatusGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAPIStatusGenerator.h; sourceTree = "<group>"; };
@@ -103,6 +99,12 @@
 		E29700641CF453E400C49658 /* PPCommonParametersGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCommonParametersGenerator.m; sourceTree = "<group>"; };
 		E29700651CF453E400C49658 /* PPSignatureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSignatureGenerator.h; sourceTree = "<group>"; };
 		E29700661CF453E400C49658 /* PPSignatureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSignatureGenerator.m; sourceTree = "<group>"; };
+		E297006C1CF459AF00C49658 /* PPStoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPStoreHelper.h; sourceTree = "<group>"; };
+		E297006D1CF459AF00C49658 /* PPStoreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPStoreHelper.m; sourceTree = "<group>"; };
+		E29700701CF45A0500C49658 /* MFUIDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUIDevice.h; sourceTree = "<group>"; };
+		E29700711CF45A0500C49658 /* MFUIDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUIDevice.m; sourceTree = "<group>"; };
+		E297007E1CF4635F00C49658 /* PPRequest+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PPRequest+Extension.h"; sourceTree = "<group>"; };
+		E297007F1CF4635F00C49658 /* PPRequest+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PPRequest+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,8 +249,8 @@
 		E297001B1CF437A800C49658 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				E297006F1CF459CB00C49658 /* Category */,
 				E29700561CF4520C00C49658 /* Helper */,
-				E297004F1CF44E2800C49658 /* Macros.h */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -321,8 +323,8 @@
 		E29700251CF43AB800C49658 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				E297005A1CF4532F00C49658 /* PPRequest+Extension.h */,
-				E297005B1CF4532F00C49658 /* PPRequest+Extension.m */,
+				E297007E1CF4635F00C49658 /* PPRequest+Extension.h */,
+				E297007F1CF4635F00C49658 /* PPRequest+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -330,8 +332,8 @@
 		E29700261CF43AB800C49658 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E29700371CF4489100C49658 /* MFRequest.h */,
-				E29700381CF4489100C49658 /* MFRequest.m */,
+				E29700371CF4489100C49658 /* PPRequest.h */,
+				E29700381CF4489100C49658 /* PPRequest.m */,
 				E29700301CF447F600C49658 /* NSObject+ProtocolAddition.h */,
 				E29700311CF447F600C49658 /* NSObject+ProtocolAddition.m */,
 				E29700291CF43E2200C49658 /* MFNetworkingConfig.h */,
@@ -367,10 +369,19 @@
 		E29700561CF4520C00C49658 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				E29700571CF4521200C49658 /* PPStoreHelper.h */,
-				E29700581CF4521200C49658 /* PPStoreHelper.m */,
+				E297006C1CF459AF00C49658 /* PPStoreHelper.h */,
+				E297006D1CF459AF00C49658 /* PPStoreHelper.m */,
+				E29700701CF45A0500C49658 /* MFUIDevice.h */,
+				E29700711CF45A0500C49658 /* MFUIDevice.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		E297006F1CF459CB00C49658 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,22 +565,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E297002B1CF43E2200C49658 /* MFNetworkingConfig.m in Sources */,
+				E29700801CF4635F00C49658 /* PPRequest+Extension.m in Sources */,
+				E297006E1CF459AF00C49658 /* PPStoreHelper.m in Sources */,
 				E297004E1CF44C1F00C49658 /* MFNSString+Addition.m in Sources */,
 				E297003F1CF4496100C49658 /* MFNetworking.m in Sources */,
 				E29700551CF44F0800C49658 /* MFHostHelper.m in Sources */,
 				E297006B1CF453E400C49658 /* PPSignatureGenerator.m in Sources */,
 				E26D6F591CF034E600CCDD6A /* General.xcdatamodeld in Sources */,
-				E297005C1CF4532F00C49658 /* PPRequest+Extension.m in Sources */,
+				E29700721CF45A0500C49658 /* MFUIDevice.m in Sources */,
 				E297006A1CF453E400C49658 /* PPCommonParametersGenerator.m in Sources */,
 				E29700681CF453E400C49658 /* PPAPIStatusGenerator.m in Sources */,
 				E26D6F4D1CF034E600CCDD6A /* main.m in Sources */,
 				E29700321CF447F600C49658 /* NSObject+ProtocolAddition.m in Sources */,
-				E29700591CF4521200C49658 /* PPStoreHelper.m in Sources */,
 				E29700231CF437A800C49658 /* ViewController.m in Sources */,
 				E29700671CF453E400C49658 /* PPApiStatus.m in Sources */,
 				E29700541CF44F0800C49658 /* MFNetworkingHelper.m in Sources */,
 				E29700221CF437A800C49658 /* AppDelegate.m in Sources */,
-				E29700391CF4489100C49658 /* MFRequest.m in Sources */,
+				E29700391CF4489100C49658 /* PPRequest.m in Sources */,
 				E29700691CF453E400C49658 /* PPCommonHeadersGenerator.m in Sources */,
 				E29700421CF449F600C49658 /* MFNetworkingLogger.m in Sources */,
 			);

@@ -51,6 +51,8 @@ PODS:
   - SDWebImage/Core (3.7.6)
   - SFHFKeychainUtils (0.0.1)
   - TPKeyboardAvoiding (1.3)
+  - VDevice (1.0.0)
+  - VExtensions (1.1.6)
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.4)
@@ -63,6 +65,8 @@ DEPENDENCIES:
   - SDWebImage
   - SFHFKeychainUtils
   - TPKeyboardAvoiding
+  - VDevice
+  - VExtensions
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -74,7 +78,9 @@ SPEC CHECKSUMS:
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  VDevice: d355fa9eb80021e99fca9165abf951373c95fd1c
+  VExtensions: f94c88d0a6ffa36ae14c64f63135434128da7e17
 
-PODFILE CHECKSUM: 1e86e17face5ea29ef676d43b32a81c045a84259
+PODFILE CHECKSUM: 36a83d8f394fb6b838f0bbe07aa2525ef0021cce
 
 COCOAPODS: 1.0.0

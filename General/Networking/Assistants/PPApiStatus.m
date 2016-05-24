@@ -7,7 +7,7 @@
 //
 
 #import "PPApiStatus.h"
-#import "Macros.h"
+#import "VMacros.h"
 
 @implementation NSError(PP_Error)
 
