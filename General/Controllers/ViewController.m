@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -17,9 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"General";
-    
-    
-
 }
 
 - (void)didReceiveMemoryWarning {
