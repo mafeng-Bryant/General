@@ -1,0 +1,19 @@
+//
+//  GL-Prefix.pch
+//  General
+//
+//  Created by patpat on 16/6/12.
+//  Copyright © 2016年 test. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "UIColor+Expanded.h"
+
+
+
+#endif
+

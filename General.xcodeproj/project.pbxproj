@@ -15,7 +15,6 @@
 		E26D6F691CF034E600CCDD6A /* GeneralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F681CF034E600CCDD6A /* GeneralTests.m */; };
 		E26D6F741CF034E600CCDD6A /* GeneralUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F731CF034E600CCDD6A /* GeneralUITests.m */; };
 		E29700221CF437A800C49658 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700171CF437A800C49658 /* AppDelegate.m */; };
-		E29700231CF437A800C49658 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700191CF437A800C49658 /* ViewController.m */; };
 		E297002B1CF43E2200C49658 /* MFNetworkingConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E297002A1CF43E2200C49658 /* MFNetworkingConfig.m */; };
 		E29700321CF447F600C49658 /* NSObject+ProtocolAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700311CF447F600C49658 /* NSObject+ProtocolAddition.m */; };
 		E29700391CF4489100C49658 /* PPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E29700381CF4489100C49658 /* PPRequest.m */; };
@@ -77,8 +76,6 @@
 		E280AE431CF1B82A00F3BDFF /* XCAsyncTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCAsyncTestCase.framework; path = "../../Library/Developer/Xcode/DerivedData/General-dpapxwvmpuiphaarlwyqsdicfkwe/Build/Products/Debug-iphonesimulator/XCAsyncTestCase/XCAsyncTestCase.framework"; sourceTree = "<group>"; };
 		E29700161CF437A800C49658 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Controllers/AppDelegate.h; sourceTree = "<group>"; };
 		E29700171CF437A800C49658 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Controllers/AppDelegate.m; sourceTree = "<group>"; };
-		E29700181CF437A800C49658 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E29700191CF437A800C49658 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E29700291CF43E2200C49658 /* MFNetworkingConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkingConfig.h; sourceTree = "<group>"; };
 		E297002A1CF43E2200C49658 /* MFNetworkingConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkingConfig.m; sourceTree = "<group>"; };
 		E297002C1CF4411F00C49658 /* MFNetworkingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkingHeader.h; sourceTree = "<group>"; };
@@ -120,6 +117,7 @@
 		E2A70D671D0D54110019E112 /* PPTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTabBarItem.m; sourceTree = "<group>"; };
 		E2A70D691D0D68830019E112 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
 		E2A70D6A1D0D68830019E112 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
+		E2A70D6E1D0D80E10019E112 /* GL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GL-Prefix.pch"; sourceTree = "<group>"; };
 		E2BCFECE1D07FAC400803A8A /* MFHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHeader.h; sourceTree = "<group>"; };
 		E2BCFED11D08079A00803A8A /* PPMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapManager.h; sourceTree = "<group>"; };
 		E2BCFED21D08079A00803A8A /* PPMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMapManager.m; sourceTree = "<group>"; };
@@ -210,8 +208,10 @@
 				E29700151CF437A800C49658 /* Controllers */,
 				E29700161CF437A800C49658 /* AppDelegate.h */,
 				E29700171CF437A800C49658 /* AppDelegate.m */,
+				E2A70D6E1D0D80E10019E112 /* GL-Prefix.pch */,
 				E26D6F5C1CF034E600CCDD6A /* LaunchScreen.storyboard */,
 				E26D6F5F1CF034E600CCDD6A /* Info.plist */,
+				E26D6F4C1CF034E600CCDD6A /* main.m */,
 				E26D6F571CF034E600CCDD6A /* General.xcdatamodeld */,
 				E26D6F4B1CF034E600CCDD6A /* Supporting Files */,
 			);
@@ -221,7 +221,6 @@
 		E26D6F4B1CF034E600CCDD6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E26D6F4C1CF034E600CCDD6A /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -256,8 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				E2A70D5F1D0D4E070019E112 /* RootControllers */,
-				E29700181CF437A800C49658 /* ViewController.h */,
-				E29700191CF437A800C49658 /* ViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -644,7 +641,6 @@
 				E26D6F4D1CF034E600CCDD6A /* main.m in Sources */,
 				E2A70D681D0D54110019E112 /* PPTabBarItem.m in Sources */,
 				E29700321CF447F600C49658 /* NSObject+ProtocolAddition.m in Sources */,
-				E29700231CF437A800C49658 /* ViewController.m in Sources */,
 				E29700671CF453E400C49658 /* PPApiStatus.m in Sources */,
 				E29700541CF44F0800C49658 /* MFNetworkingHelper.m in Sources */,
 				E29700221CF437A800C49658 /* AppDelegate.m in Sources */,
@@ -788,8 +784,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: he bruce (CL6B7W97YW)";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "General/GL-Prefix.pch";
 				INFOPLIST_FILE = General/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -804,8 +800,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: he bruce (CL6B7W97YW)";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "General/GL-Prefix.pch";
 				INFOPLIST_FILE = General/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

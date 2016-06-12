@@ -8,6 +8,7 @@
 
 #import "PPTabBarItem.h"
 
+
 @interface PPTabBarItem()
 {
     NSString* _title;
@@ -52,7 +53,14 @@
 {
    self.backgroundColor = [UIColor clearColor];
    _title = @"";
-    _titleOffset = UIOffsetZero;
+   _titleOffset = UIOffsetZero;
+    
+    _unselectedTitleAttributes = @{
+                                   NSFontAttributeName:[UIFont systemFontOfSize:10]
+                                 };
+    
+   
+    
     
     
     
