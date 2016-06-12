@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - BaiduMapKit (2.10.2)
   - Braintree (4.2.3):
     - Braintree/Card (= 4.2.3)
     - Braintree/Core (= 4.2.3)
@@ -56,6 +57,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.4)
+  - BaiduMapKit
   - Braintree (~> 4.2.3)
   - Braintree/Apple-Pay (~> 4.2.3)
   - CardIO
@@ -70,6 +72,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  BaiduMapKit: b1706a062597c70ec62a0cca93212cba1d3017e1
   Braintree: 05791bdc6d43c3faf2f802dd2d687e9f619f7f57
   CardIO: 92c45caef0d986c4a303a7afba0c9b76ff2b1f6e
   DCAnimationKit: 7133bef877ce1aa113dcfeea1380ca67f91f7608
@@ -81,6 +84,6 @@ SPEC CHECKSUMS:
   VDevice: d355fa9eb80021e99fca9165abf951373c95fd1c
   VExtensions: f94c88d0a6ffa36ae14c64f63135434128da7e17
 
-PODFILE CHECKSUM: 36a83d8f394fb6b838f0bbe07aa2525ef0021cce
+PODFILE CHECKSUM: 3771989aec502fa8dca1d823ed937995b3118955
 
 COCOAPODS: 1.0.0

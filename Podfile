@@ -6,6 +6,7 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'General' do
+    
   pod 'AFNetworking', '2.5.4'
   pod 'TPKeyboardAvoiding'
   pod 'SDWebImage'
@@ -18,5 +19,7 @@ target 'General' do
   pod 'CardIO'
   pod 'VExtensions'
   pod 'VDevice'
+  pod 'BaiduMapKit'
 #  pod 'MFPodDemo', :git => 'https://github.com/mafeng-Bryant/MFPodDemo.git'
+
 end

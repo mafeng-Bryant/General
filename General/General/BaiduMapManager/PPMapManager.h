@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MFHeader.h"
 
 @interface PPMapManager : NSObject
+{
+    BMKMapManager* _mapManager;
+}
+
++ (PPMapManager*)shareInstance;
+
+- (void)starBaiduMap;
+
 
 @end
