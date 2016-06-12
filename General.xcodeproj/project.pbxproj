@@ -35,6 +35,7 @@
 		E2A70D651D0D522E0019E112 /* PPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A70D641D0D522E0019E112 /* PPTabBar.m */; };
 		E2A70D681D0D54110019E112 /* PPTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A70D671D0D54110019E112 /* PPTabBarItem.m */; };
 		E2A70D6B1D0D68830019E112 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A70D6A1D0D68830019E112 /* UIColor+expanded.m */; };
+		E2A70D711D0D83780019E112 /* PPUIFont.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A70D701D0D83780019E112 /* PPUIFont.m */; };
 		E2BCFED31D08079A00803A8A /* PPMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCFED21D08079A00803A8A /* PPMapManager.m */; };
 		E2BE4A3C1D052C0B001CADE5 /* PPScrollNumView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE4A3B1D052C0B001CADE5 /* PPScrollNumView.m */; };
 		E2BE4A3F1D05522A001CADE5 /* PPScrollDigitView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE4A3E1D05522A001CADE5 /* PPScrollDigitView.m */; };
@@ -118,7 +119,9 @@
 		E2A70D691D0D68830019E112 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
 		E2A70D6A1D0D68830019E112 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
 		E2A70D6E1D0D80E10019E112 /* GL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GL-Prefix.pch"; sourceTree = "<group>"; };
-		E2BCFECE1D07FAC400803A8A /* MFHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHeader.h; sourceTree = "<group>"; };
+		E2A70D6F1D0D83780019E112 /* PPUIFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPUIFont.h; sourceTree = "<group>"; };
+		E2A70D701D0D83780019E112 /* PPUIFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPUIFont.m; sourceTree = "<group>"; };
+		E2A70D731D0D83E40019E112 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		E2BCFED11D08079A00803A8A /* PPMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMapManager.h; sourceTree = "<group>"; };
 		E2BCFED21D08079A00803A8A /* PPMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMapManager.m; sourceTree = "<group>"; };
 		E2BE4A3A1D052C0B001CADE5 /* PPScrollNumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPScrollNumView.h; sourceTree = "<group>"; };
@@ -269,6 +272,7 @@
 		E297001B1CF437A800C49658 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				E2A70D721D0D83CE0019E112 /* Macro */,
 				E2BCFED01D08077400803A8A /* BaiduMapManager */,
 				E297006F1CF459CB00C49658 /* Category */,
 				E29700561CF4520C00C49658 /* Helper */,
@@ -395,7 +399,6 @@
 				E297006D1CF459AF00C49658 /* PPStoreHelper.m */,
 				E29700701CF45A0500C49658 /* MFUIDevice.h */,
 				E29700711CF45A0500C49658 /* MFUIDevice.m */,
-				E2BCFECE1D07FAC400803A8A /* MFHeader.h */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -403,6 +406,8 @@
 		E297006F1CF459CB00C49658 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E2A70D6F1D0D83780019E112 /* PPUIFont.h */,
+				E2A70D701D0D83780019E112 /* PPUIFont.m */,
 				E2A70D691D0D68830019E112 /* UIColor+expanded.h */,
 				E2A70D6A1D0D68830019E112 /* UIColor+expanded.m */,
 			);
@@ -420,6 +425,14 @@
 				E2A70D671D0D54110019E112 /* PPTabBarItem.m */,
 			);
 			path = RootControllers;
+			sourceTree = "<group>";
+		};
+		E2A70D721D0D83CE0019E112 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				E2A70D731D0D83E40019E112 /* Macros.h */,
+			);
+			path = Macro;
 			sourceTree = "<group>";
 		};
 		E2BCFED01D08077400803A8A /* BaiduMapManager */ = {
@@ -643,6 +656,7 @@
 				E29700321CF447F600C49658 /* NSObject+ProtocolAddition.m in Sources */,
 				E29700671CF453E400C49658 /* PPApiStatus.m in Sources */,
 				E29700541CF44F0800C49658 /* MFNetworkingHelper.m in Sources */,
+				E2A70D711D0D83780019E112 /* PPUIFont.m in Sources */,
 				E29700221CF437A800C49658 /* AppDelegate.m in Sources */,
 				E29700391CF4489100C49658 /* PPRequest.m in Sources */,
 				E29700691CF453E400C49658 /* PPCommonHeadersGenerator.m in Sources */,

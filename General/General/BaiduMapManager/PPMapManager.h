@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MFHeader.h"
 
 @interface PPMapManager : NSObject
 {
