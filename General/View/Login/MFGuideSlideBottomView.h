@@ -1,5 +1,5 @@
 //
-//  MFIntroductionController.h
+//  MFGuideSlideBottomView.h
 //  General
 //
 //  Created by patpat on 16/6/13.
@@ -7,12 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MFBaseViewController.h"
 
-@interface MFIntroductionController :MFBaseViewController
-
-
-
-
+@interface MFGuideSlideBottomView : UIView
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MFIntroductionController.h"
 
 @interface AppDelegate ()
 
@@ -31,6 +32,8 @@
     //配置页面
     [self configureViewController];
     
+    [self.window makeKeyAndVisible];
+
 
     return YES;
 }
@@ -58,8 +61,8 @@
 
 - (void)setIntroductionViewController
 {
- 
-    
+    MFIntroductionController *introductionVC = [[MFIntroductionController alloc] init];
+    [self.window setRootViewController:introductionVC];
 
 }
 
