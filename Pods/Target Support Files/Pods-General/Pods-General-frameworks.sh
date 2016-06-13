@@ -94,6 +94,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/TPKeyboardAvoiding/TPKeyboardAvoiding.framework"
   install_framework "$BUILT_PRODUCTS_DIR/VDevice/VDevice.framework"
   install_framework "$BUILT_PRODUCTS_DIR/VExtensions/VExtensions.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VFileManager/VFileManager.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
@@ -106,4 +107,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/TPKeyboardAvoiding/TPKeyboardAvoiding.framework"
   install_framework "$BUILT_PRODUCTS_DIR/VDevice/VDevice.framework"
   install_framework "$BUILT_PRODUCTS_DIR/VExtensions/VExtensions.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VFileManager/VFileManager.framework"
 fi

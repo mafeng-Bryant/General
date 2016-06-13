@@ -1,0 +1,6 @@
+framework module VFileManager {
+  umbrella header "VFileManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

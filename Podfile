@@ -20,6 +20,7 @@ target 'General' do
   pod 'VExtensions'
   pod 'VDevice'
   pod 'BaiduMapKit'
+  pod 'VFileManager'
 #  pod 'MFPodDemo', :git => 'https://github.com/mafeng-Bryant/MFPodDemo.git'
 
 end

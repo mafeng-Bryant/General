@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BCF888B4E321AFA821482974282714B0'
-               BlueprintName = 'TPKeyboardAvoiding'
+               BlueprintIdentifier = '4795D8BE251B21EFB903B770043EE9AB'
+               BlueprintName = 'VFileManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TPKeyboardAvoiding.framework'>
+               BuildableName = 'VFileManager.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

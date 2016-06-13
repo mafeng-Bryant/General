@@ -23,28 +23,32 @@ static MFSetting* setting = nil;
 
 - (void)reset
 {
-
-    
-    
+    [self.userHandle reset];
 }
 
-
-- (BOOL)isGuestSignIn
++ (BOOL)isGuestSignIn
 {
- 
-    return YES;
+    return [[MFSetting sharedMFSetting].userHandle isGuestSignIn];
 }
 
-- (void)isAuthVaild
++ (BOOL)isAuthVaild
 {
-
-
+    return [[MFSetting sharedMFSetting].userHandle isAuthVaild];
 }
 
-- (NSNumber*)userId
++ (NSNumber*)userId
 {
-    return @1;
+   return [MFSetting sharedMFSetting].userHandle.userId;
 }
 
+#pragma mark Setter and Getter
+
+- (MFUserHandler *)userHandle
+{
+    if (!_userHandle) {
+        _userHandle = [[MFUserHandler alloc]init];
+    }
+    return _userHandle;
+}
 
 @end

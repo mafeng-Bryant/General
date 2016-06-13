@@ -7,6 +7,7 @@
 //
 
 #import "MFUserModel.h"
+#import "MFSetting.h"
 
 @implementation MFUserModel
 
@@ -64,37 +65,43 @@
     }];
 }
 
+-(BOOL)save
+{
+    NSString* path = [PPFileHelper userPath:self.userId];
+    BOOL success = [NSKeyedArchiver archiveRootObject:self toFile:path];
+    if (success) {
+        NSLog(@"保存成功");
+    }else {
+        NSLog(@"保存失败");
+   }
+    return success;
+}
 
 - (void)deleteCurrentUser
 {
-  
-    
-    
+    [MFUserModel deleteUserByUserId:[MFSetting userId]];
 }
 
 + (MFUserModel*)readByUserId:(NSNumber*)userId
 {
-
-    return nil;
-
+    return [NSKeyedUnarchiver unarchiveObjectWithFile:[PPFileHelper userPath:userId]];
 }
 
 + (MFUserModel*)currentUser
 {
-
-    return nil;
+    return [self readByUserId:[MFSetting userId]];
 }
 
 + (void)deleteUserByUserId:(NSNumber*)userId
 {
-
-
+    if ([self isCachedByUserId:userId]) {
+        [PPFileHelper removeItemAtPath:[PPFileHelper userPath:userId] error:nil];
+    }
 }
 
 + (BOOL)isCachedByUserId:(NSNumber*)userId
 {
-
-    return YES;
+   return [PPFileHelper existsItemAtPath:[PPFileHelper userPath:userId]];
 }
 
 @end

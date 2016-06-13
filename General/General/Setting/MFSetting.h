@@ -24,18 +24,18 @@
  *
  *  @return Bool
  */
-- (BOOL)isGuestSignIn;
++ (BOOL)isGuestSignIn;
 
 /**
  *  是否正常登录
  */
-- (void)isAuthVaild;
++ (BOOL)isAuthVaild;
 
 /**
  *  用户id
  *
  *  @return NSNumber
  */
-- (NSNumber*)userId;
++ (NSNumber*)userId;
 
 @end

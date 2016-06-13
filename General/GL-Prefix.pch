@@ -26,6 +26,11 @@
 #import "CategoryHeader.h"
 #import "MFInLineHeader.h"
 #import "VMacros.h"
+#import "VExtensions.h"
+#import "UIImageView+WebCache.h"
+#import "PPFileHelper.h"
+#import "MFSetting.h"
+
 
 #endif
 

@@ -44,6 +44,8 @@
 		E2D6C3FF1D0E85F0004B6942 /* MFUserHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C3FE1D0E85F0004B6942 /* MFUserHandler.m */; };
 		E2D6C40D1D0E9BC0004B6942 /* MFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C40C1D0E9BC0004B6942 /* MFUserModel.m */; };
 		E2D6C4101D0E9BE0004B6942 /* MFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C40F1D0E9BE0004B6942 /* MFBaseModel.m */; };
+		E2D6C4131D0EA585004B6942 /* PPFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C4121D0EA585004B6942 /* PPFileHelper.m */; };
+		E2D6C4171D0EB386004B6942 /* MFIntroductionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C4161D0EB386004B6942 /* MFIntroductionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +147,10 @@
 		E2D6C40C1D0E9BC0004B6942 /* MFUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUserModel.m; sourceTree = "<group>"; };
 		E2D6C40E1D0E9BE0004B6942 /* MFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseModel.h; sourceTree = "<group>"; };
 		E2D6C40F1D0E9BE0004B6942 /* MFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBaseModel.m; sourceTree = "<group>"; };
+		E2D6C4111D0EA585004B6942 /* PPFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPFileHelper.h; sourceTree = "<group>"; };
+		E2D6C4121D0EA585004B6942 /* PPFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPFileHelper.m; sourceTree = "<group>"; };
+		E2D6C4151D0EB386004B6942 /* MFIntroductionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFIntroductionController.h; sourceTree = "<group>"; };
+		E2D6C4161D0EB386004B6942 /* MFIntroductionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFIntroductionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +273,8 @@
 		E29700151CF437A800C49658 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E2D6C4181D0EB5C0004B6942 /* Base */,
+				E2D6C4141D0EB33E004B6942 /* Login */,
 				E2A70D5F1D0D4E070019E112 /* RootControllers */,
 			);
 			path = Controllers;
@@ -371,6 +379,8 @@
 		E29700561CF4520C00C49658 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E2D6C4111D0EA585004B6942 /* PPFileHelper.h */,
+				E2D6C4121D0EA585004B6942 /* PPFileHelper.m */,
 				E297006C1CF459AF00C49658 /* PPStoreHelper.h */,
 				E297006D1CF459AF00C49658 /* PPStoreHelper.m */,
 				E29700701CF45A0500C49658 /* MFUIDevice.h */,
@@ -498,6 +508,22 @@
 				E2D6C40F1D0E9BE0004B6942 /* MFBaseModel.m */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		E2D6C4141D0EB33E004B6942 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E2D6C4151D0EB386004B6942 /* MFIntroductionController.h */,
+				E2D6C4161D0EB386004B6942 /* MFIntroductionController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E2D6C4181D0EB5C0004B6942 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -698,6 +724,7 @@
 				E29700721CF45A0500C49658 /* MFUIDevice.m in Sources */,
 				E297006A1CF453E400C49658 /* PPCommonParametersGenerator.m in Sources */,
 				E2BE4A3F1D05522A001CADE5 /* PPScrollDigitView.m in Sources */,
+				E2D6C4171D0EB386004B6942 /* MFIntroductionController.m in Sources */,
 				E29700681CF453E400C49658 /* PPAPIStatusGenerator.m in Sources */,
 				E26D6F4D1CF034E600CCDD6A /* main.m in Sources */,
 				E2A70D681D0D54110019E112 /* PPTabBarItem.m in Sources */,
@@ -705,6 +732,7 @@
 				E29700671CF453E400C49658 /* PPApiStatus.m in Sources */,
 				E29700541CF44F0800C49658 /* MFNetworkingHelper.m in Sources */,
 				E2A70D711D0D83780019E112 /* PPUIFont.m in Sources */,
+				E2D6C4131D0EA585004B6942 /* PPFileHelper.m in Sources */,
 				E29700221CF437A800C49658 /* AppDelegate.m in Sources */,
 				E29700391CF4489100C49658 /* PPRequest.m in Sources */,
 				E29700691CF453E400C49658 /* PPCommonHeadersGenerator.m in Sources */,

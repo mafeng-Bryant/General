@@ -60,9 +60,4 @@
 + (BOOL)isCachedByUserId:(NSNumber*)userId;
 
 
-
-
-
-
-
 @end

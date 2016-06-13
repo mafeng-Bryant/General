@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 
-
 @interface AppDelegate ()
 
 @end
@@ -29,33 +28,21 @@
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     
-    //设置导航条样式
-    [self customizeInterface];
+    //配置页面
+    [self configureViewController];
     
 
     return YES;
 }
 
-
-- (void)customizeInterface
+- (void)configureViewController
 {
-    /*
-    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
-    [navigationBarAppearance setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithHexString:[NSObject baseURLStrIsTest]? @"0x3bbd79" : @"0x28303b"]] forBarMetrics:UIBarMetricsDefault];
-    [navigationBarAppearance setTintColor:[UIColor whiteColor]];//返回按钮的箭头颜色
-    NSDictionary *textAttributes = @{
-                                     NSFontAttributeName: [UIFont boldSystemFontOfSize:kNavTitleFontSize],
-                                     NSForegroundColorAttributeName: [UIColor whiteColor],
-                                     };
-    [navigationBarAppearance setTitleTextAttributes:textAttributes];
-    
-    [[UITextField appearance] setTintColor:[UIColor colorWithHexString:@"0x3bbc79"]];//设置UITextField的光标颜色
-    [[UITextView appearance] setTintColor:[UIColor colorWithHexString:@"0x3bbc79"]];//设置UITextView的光标颜色
-    [[UISearchBar appearance] setBackgroundImage:[UIImage imageWithColor:kColorTableSectionBg] forBarPosition:0 barMetrics:UIBarMetricsDefault];
-     */
+    if ([MFSetting isAuthVaild]) {
+        [self setTabBarController];
+      }else {
+        [self setIntroductionViewController];
+    }
 }
-
-
 
 - (void)setTabBarController
 {
