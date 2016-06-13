@@ -22,7 +22,58 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = PPC7;
+    
+    //netWork 网络活动显示器
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    //设置导航条样式
+    [self customizeInterface];
+    
+
     return YES;
+}
+
+
+- (void)customizeInterface
+{
+    /*
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    [navigationBarAppearance setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithHexString:[NSObject baseURLStrIsTest]? @"0x3bbd79" : @"0x28303b"]] forBarMetrics:UIBarMetricsDefault];
+    [navigationBarAppearance setTintColor:[UIColor whiteColor]];//返回按钮的箭头颜色
+    NSDictionary *textAttributes = @{
+                                     NSFontAttributeName: [UIFont boldSystemFontOfSize:kNavTitleFontSize],
+                                     NSForegroundColorAttributeName: [UIColor whiteColor],
+                                     };
+    [navigationBarAppearance setTitleTextAttributes:textAttributes];
+    
+    [[UITextField appearance] setTintColor:[UIColor colorWithHexString:@"0x3bbc79"]];//设置UITextField的光标颜色
+    [[UITextView appearance] setTintColor:[UIColor colorWithHexString:@"0x3bbc79"]];//设置UITextView的光标颜色
+    [[UISearchBar appearance] setBackgroundImage:[UIImage imageWithColor:kColorTableSectionBg] forBarPosition:0 barMetrics:UIBarMetricsDefault];
+     */
+}
+
+
+
+- (void)setTabBarController
+{
+
+
+}
+
+- (void)setLoginViewController
+{
+
+    
+}
+
+- (void)setIntroductionViewController
+{
+ 
+    
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

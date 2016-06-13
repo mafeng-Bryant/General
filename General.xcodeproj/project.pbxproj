@@ -39,6 +39,11 @@
 		E2BCFED31D08079A00803A8A /* PPMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCFED21D08079A00803A8A /* PPMapManager.m */; };
 		E2BE4A3C1D052C0B001CADE5 /* PPScrollNumView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE4A3B1D052C0B001CADE5 /* PPScrollNumView.m */; };
 		E2BE4A3F1D05522A001CADE5 /* PPScrollDigitView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE4A3E1D05522A001CADE5 /* PPScrollDigitView.m */; };
+		E2D6C3F71D0E6C7B004B6942 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C3F61D0E6C7B004B6942 /* UIImage+Common.m */; };
+		E2D6C3FC1D0E85BC004B6942 /* MFSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C3FB1D0E85BC004B6942 /* MFSetting.m */; };
+		E2D6C3FF1D0E85F0004B6942 /* MFUserHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C3FE1D0E85F0004B6942 /* MFUserHandler.m */; };
+		E2D6C40D1D0E9BC0004B6942 /* MFUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C40C1D0E9BC0004B6942 /* MFUserModel.m */; };
+		E2D6C4101D0E9BE0004B6942 /* MFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C40F1D0E9BE0004B6942 /* MFBaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +133,18 @@
 		E2BE4A3B1D052C0B001CADE5 /* PPScrollNumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPScrollNumView.m; sourceTree = "<group>"; };
 		E2BE4A3D1D05522A001CADE5 /* PPScrollDigitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPScrollDigitView.h; sourceTree = "<group>"; };
 		E2BE4A3E1D05522A001CADE5 /* PPScrollDigitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPScrollDigitView.m; sourceTree = "<group>"; };
+		E2D6C3F51D0E6C7B004B6942 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		E2D6C3F61D0E6C7B004B6942 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		E2D6C3F81D0E6C9D004B6942 /* CategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
+		E2D6C3FA1D0E85BC004B6942 /* MFSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSetting.h; sourceTree = "<group>"; };
+		E2D6C3FB1D0E85BC004B6942 /* MFSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSetting.m; sourceTree = "<group>"; };
+		E2D6C3FD1D0E85F0004B6942 /* MFUserHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUserHandler.h; sourceTree = "<group>"; };
+		E2D6C3FE1D0E85F0004B6942 /* MFUserHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUserHandler.m; sourceTree = "<group>"; };
+		E2D6C4001D0E8A39004B6942 /* MFInLineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFInLineHeader.h; sourceTree = "<group>"; };
+		E2D6C40B1D0E9BC0004B6942 /* MFUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUserModel.h; sourceTree = "<group>"; };
+		E2D6C40C1D0E9BC0004B6942 /* MFUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUserModel.m; sourceTree = "<group>"; };
+		E2D6C40E1D0E9BE0004B6942 /* MFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseModel.h; sourceTree = "<group>"; };
+		E2D6C40F1D0E9BE0004B6942 /* MFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBaseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,14 +216,15 @@
 		E26D6F4A1CF034E600CCDD6A /* General */ = {
 			isa = PBXGroup;
 			children = (
-				E280AE461CF1BB1600F3BDFF /* Source */,
-				E297001F1CF437A800C49658 /* ThirdParty */,
+				E2D6C4091D0E99CB004B6942 /* Model */,
+				E2D6C4081D0E99B3004B6942 /* JSEngine */,
+				E2D6C4071D0E9993004B6942 /* DataBase */,
+				E2D6C4061D0E9981004B6942 /* URLRouter */,
+				E2D6C4051D0E9962004B6942 /* ThirdParty */,
+				E2D6C4041D0E9948004B6942 /* Source */,
+				E26D6F5A1CF034E600CCDD6A /* Images.xcassets */,
 				E297001E1CF437A800C49658 /* Networking */,
-				E29700201CF437A800C49658 /* URLRouter */,
-				E297001A1CF437A800C49658 /* DataBase */,
 				E297001B1CF437A800C49658 /* General */,
-				E297001C1CF437A800C49658 /* JSEngine */,
-				E297001D1CF437A800C49658 /* Model */,
 				E29700211CF437A800C49658 /* View */,
 				E29700151CF437A800C49658 /* Controllers */,
 				E29700161CF437A800C49658 /* AppDelegate.h */,
@@ -246,14 +264,6 @@
 			path = GeneralUITests;
 			sourceTree = "<group>";
 		};
-		E280AE461CF1BB1600F3BDFF /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				E26D6F5A1CF034E600CCDD6A /* Images.xcassets */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
 		E29700151CF437A800C49658 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,36 +272,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		E297001A1CF437A800C49658 /* DataBase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataBase;
-			sourceTree = "<group>";
-		};
 		E297001B1CF437A800C49658 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				E2D6C3F91D0E8592004B6942 /* Setting */,
 				E2A70D721D0D83CE0019E112 /* Macro */,
 				E2BCFED01D08077400803A8A /* BaiduMapManager */,
 				E297006F1CF459CB00C49658 /* Category */,
 				E29700561CF4520C00C49658 /* Helper */,
 			);
 			path = General;
-			sourceTree = "<group>";
-		};
-		E297001C1CF437A800C49658 /* JSEngine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JSEngine;
-			sourceTree = "<group>";
-		};
-		E297001D1CF437A800C49658 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E297001E1CF437A800C49658 /* Networking */ = {
@@ -305,20 +295,6 @@
 				E29700281CF43AB800C49658 /* Service */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		E297001F1CF437A800C49658 /* ThirdParty */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		E29700201CF437A800C49658 /* URLRouter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = URLRouter;
 			sourceTree = "<group>";
 		};
 		E29700211CF437A800C49658 /* View */ = {
@@ -406,10 +382,13 @@
 		E297006F1CF459CB00C49658 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E2D6C3F51D0E6C7B004B6942 /* UIImage+Common.h */,
+				E2D6C3F61D0E6C7B004B6942 /* UIImage+Common.m */,
 				E2A70D6F1D0D83780019E112 /* PPUIFont.h */,
 				E2A70D701D0D83780019E112 /* PPUIFont.m */,
 				E2A70D691D0D68830019E112 /* UIColor+expanded.h */,
 				E2A70D6A1D0D68830019E112 /* UIColor+expanded.m */,
+				E2D6C3F81D0E6C9D004B6942 /* CategoryHeader.h */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -431,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				E2A70D731D0D83E40019E112 /* Macros.h */,
+				E2D6C4001D0E8A39004B6942 /* MFInLineHeader.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -453,6 +433,71 @@
 				E2BE4A3E1D05522A001CADE5 /* PPScrollDigitView.m */,
 			);
 			path = scrollLabel;
+			sourceTree = "<group>";
+		};
+		E2D6C3F91D0E8592004B6942 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E2D6C3FA1D0E85BC004B6942 /* MFSetting.h */,
+				E2D6C3FB1D0E85BC004B6942 /* MFSetting.m */,
+				E2D6C3FD1D0E85F0004B6942 /* MFUserHandler.h */,
+				E2D6C3FE1D0E85F0004B6942 /* MFUserHandler.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E2D6C4041D0E9948004B6942 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E2D6C4051D0E9962004B6942 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		E2D6C4061D0E9981004B6942 /* URLRouter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = URLRouter;
+			sourceTree = "<group>";
+		};
+		E2D6C4071D0E9993004B6942 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		E2D6C4081D0E99B3004B6942 /* JSEngine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSEngine;
+			sourceTree = "<group>";
+		};
+		E2D6C4091D0E99CB004B6942 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2D6C40A1D0E9B77004B6942 /* User */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2D6C40A1D0E9B77004B6942 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E2D6C40B1D0E9BC0004B6942 /* MFUserModel.h */,
+				E2D6C40C1D0E9BC0004B6942 /* MFUserModel.m */,
+				E2D6C40E1D0E9BE0004B6942 /* MFBaseModel.h */,
+				E2D6C40F1D0E9BE0004B6942 /* MFBaseModel.m */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -636,10 +681,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E297002B1CF43E2200C49658 /* MFNetworkingConfig.m in Sources */,
+				E2D6C3FC1D0E85BC004B6942 /* MFSetting.m in Sources */,
 				E29700801CF4635F00C49658 /* PPRequest+Extension.m in Sources */,
 				E2BCFED31D08079A00803A8A /* PPMapManager.m in Sources */,
 				E2A70D651D0D522E0019E112 /* PPTabBar.m in Sources */,
+				E2D6C3F71D0E6C7B004B6942 /* UIImage+Common.m in Sources */,
 				E297006E1CF459AF00C49658 /* PPStoreHelper.m in Sources */,
+				E2D6C4101D0E9BE0004B6942 /* MFBaseModel.m in Sources */,
 				E297004E1CF44C1F00C49658 /* MFNSString+Addition.m in Sources */,
 				E297003F1CF4496100C49658 /* MFNetworking.m in Sources */,
 				E29700551CF44F0800C49658 /* MFHostHelper.m in Sources */,
@@ -661,7 +709,9 @@
 				E29700391CF4489100C49658 /* PPRequest.m in Sources */,
 				E29700691CF453E400C49658 /* PPCommonHeadersGenerator.m in Sources */,
 				E29700421CF449F600C49658 /* MFNetworkingLogger.m in Sources */,
+				E2D6C3FF1D0E85F0004B6942 /* MFUserHandler.m in Sources */,
 				E2A70D621D0D4E4D0019E112 /* PPTabBarController.m in Sources */,
+				E2D6C40D1D0E9BC0004B6942 /* MFUserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

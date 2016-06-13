@@ -21,6 +21,9 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+- (void)setTabBarController;
+- (void)setLoginViewController;
+- (void)setIntroductionViewController;
 
 @end
 
