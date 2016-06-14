@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		49C06A24040325F3FFBF5436 /* Pods_General.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4E710441B0F07D010A79CF /* Pods_General.framework */; };
 		E26B29451D0EDE5B00FBE039 /* MFGuideSlideBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B29441D0EDE5B00FBE039 /* MFGuideSlideBottomView.m */; };
+		E26B29491D0FF46900FBE039 /* MFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B29471D0FF46900FBE039 /* MFLoginViewController.m */; };
+		E26B294A1D0FF46900FBE039 /* MFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26B29481D0FF46900FBE039 /* MFLoginViewController.xib */; };
+		E26B294E1D0FF52700FBE039 /* MFRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B294C1D0FF52700FBE039 /* MFRegisterViewController.m */; };
+		E26B294F1D0FF52700FBE039 /* MFRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26B294D1D0FF52700FBE039 /* MFRegisterViewController.xib */; };
 		E26D6F4D1CF034E600CCDD6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F4C1CF034E600CCDD6A /* main.m */; };
 		E26D6F591CF034E600CCDD6A /* General.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F571CF034E600CCDD6A /* General.xcdatamodeld */; };
 		E26D6F5B1CF034E600CCDD6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F5A1CF034E600CCDD6A /* Images.xcassets */; };
@@ -105,6 +109,12 @@
 		AD4E710441B0F07D010A79CF /* Pods_General.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_General.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26B29431D0EDE5B00FBE039 /* MFGuideSlideBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFGuideSlideBottomView.h; sourceTree = "<group>"; };
 		E26B29441D0EDE5B00FBE039 /* MFGuideSlideBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFGuideSlideBottomView.m; sourceTree = "<group>"; };
+		E26B29461D0FF46900FBE039 /* MFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFLoginViewController.h; sourceTree = "<group>"; };
+		E26B29471D0FF46900FBE039 /* MFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLoginViewController.m; sourceTree = "<group>"; };
+		E26B29481D0FF46900FBE039 /* MFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFLoginViewController.xib; sourceTree = "<group>"; };
+		E26B294B1D0FF52700FBE039 /* MFRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRegisterViewController.h; sourceTree = "<group>"; };
+		E26B294C1D0FF52700FBE039 /* MFRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRegisterViewController.m; sourceTree = "<group>"; };
+		E26B294D1D0FF52700FBE039 /* MFRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFRegisterViewController.xib; sourceTree = "<group>"; };
 		E26D6F481CF034E600CCDD6A /* General.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = General.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26D6F4C1CF034E600CCDD6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E26D6F581CF034E600CCDD6A /* General.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = General.xcdatamodel; sourceTree = "<group>"; };
@@ -600,6 +610,12 @@
 			children = (
 				E2D6C4151D0EB386004B6942 /* MFIntroductionController.h */,
 				E2D6C4161D0EB386004B6942 /* MFIntroductionController.m */,
+				E26B29461D0FF46900FBE039 /* MFLoginViewController.h */,
+				E26B29471D0FF46900FBE039 /* MFLoginViewController.m */,
+				E26B29481D0FF46900FBE039 /* MFLoginViewController.xib */,
+				E26B294B1D0FF52700FBE039 /* MFRegisterViewController.h */,
+				E26B294C1D0FF52700FBE039 /* MFRegisterViewController.m */,
+				E26B294D1D0FF52700FBE039 /* MFRegisterViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -790,6 +806,7 @@
 				E2D6C44D1D0ED105004B6942 /* intro_icon_4@2x.png in Resources */,
 				E2D6C44B1D0ED105004B6942 /* intro_icon_3@2x.png in Resources */,
 				E2D6C4451D0ED105004B6942 /* intro_icon_0@2x.png in Resources */,
+				E26B294F1D0FF52700FBE039 /* MFRegisterViewController.xib in Resources */,
 				E2D6C4481D0ED105004B6942 /* intro_icon_1@3x.png in Resources */,
 				E2D6C45C1D0ED105004B6942 /* intro_tip_4@3x.png in Resources */,
 				E26D6F5E1CF034E600CCDD6A /* LaunchScreen.storyboard in Resources */,
@@ -797,6 +814,7 @@
 				E2D6C4421D0ED105004B6942 /* intro_dot_selected@3x.png in Resources */,
 				E2D6C45D1D0ED105004B6942 /* intro_tip_5@2x.png in Resources */,
 				E2D6C44E1D0ED105004B6942 /* intro_icon_4@3x.png in Resources */,
+				E26B294A1D0FF46900FBE039 /* MFLoginViewController.xib in Resources */,
 				E2D6C44F1D0ED105004B6942 /* intro_icon_5@2x.png in Resources */,
 				E2D6C4581D0ED105004B6942 /* intro_tip_2@3x.png in Resources */,
 				E2D6C4521D0ED105004B6942 /* intro_icon_6@3x.png in Resources */,
@@ -891,6 +909,7 @@
 				E2D6C41B1D0EBB7A004B6942 /* MFBaseViewController.m in Sources */,
 				E29700801CF4635F00C49658 /* PPRequest+Extension.m in Sources */,
 				E2BCFED31D08079A00803A8A /* PPMapManager.m in Sources */,
+				E26B29491D0FF46900FBE039 /* MFLoginViewController.m in Sources */,
 				E2A70D651D0D522E0019E112 /* PPTabBar.m in Sources */,
 				E2D6C3F71D0E6C7B004B6942 /* UIImage+Common.m in Sources */,
 				E26B29451D0EDE5B00FBE039 /* MFGuideSlideBottomView.m in Sources */,
@@ -921,6 +940,7 @@
 				E29700391CF4489100C49658 /* PPRequest.m in Sources */,
 				E29700691CF453E400C49658 /* PPCommonHeadersGenerator.m in Sources */,
 				E29700421CF449F600C49658 /* MFNetworkingLogger.m in Sources */,
+				E26B294E1D0FF52700FBE039 /* MFRegisterViewController.m in Sources */,
 				E2D6C3FF1D0E85F0004B6942 /* MFUserHandler.m in Sources */,
 				E2A70D621D0D4E4D0019E112 /* PPTabBarController.m in Sources */,
 				E2D6C40D1D0E9BC0004B6942 /* MFUserModel.m in Sources */,

@@ -10,6 +10,9 @@
 #import "PPPageControl.h"
 #import "MFGuideSlideViewData.h"
 #import "MFGuideSlideBottomView.h"
+#import "MFLoginViewController.h"
+#import "MFRegisterViewController.h"
+
 
 @interface MFIntroductionController ()<UIScrollViewDelegate>
 {
@@ -112,13 +115,22 @@
     if (!_bottomView) {
         _bottomView = [[MFGuideSlideBottomView alloc]initWithFrame:self.view.bounds];
         _bottomView.backgroundColor = [UIColor clearColor];
+         __weak MFIntroductionController *weakSelf = self;
+        _bottomView.block = ^(ActionType type){
+            if (type == ActionTypeRegister) {
+                MFRegisterViewController* registerVC = [[MFRegisterViewController alloc]initWithNibName:@"MFRegisterViewController" bundle:nil];
+                [weakSelf presentViewController:registerVC animated:YES completion:nil];
+            }else if (type ==ActionTypeLogin){
+                MFLoginViewController* loginVC = [[MFLoginViewController alloc]initWithNibName:@"MFLoginViewController" bundle:nil];
+                [weakSelf presentViewController:loginVC animated:YES completion:nil];
+            }
+         };
       }
     _bottomView.y = self.view.height - _bottomView.height;
     return _bottomView;
 }
 
 #pragma mark UIScrollView delegate
-
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -153,7 +165,7 @@
                 }];
                 
             }else if (_lastContentOffsetX < scrollView.contentOffset.x)
-         {
+            {
                 CGFloat alpha = 1 - offset/scrollView.width;
                 MFGuideSlideView* currentView = (MFGuideSlideView*)[scrollView viewWithTag:1000+_pageControl.currentPage];
                 MFGuideSlideView* nextView = (MFGuideSlideView*)[scrollView viewWithTag:1000+_pageControl.currentPage+1];

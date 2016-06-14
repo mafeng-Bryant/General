@@ -41,6 +41,7 @@
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [btn setTitle:@"注册" forState:UIControlStateNormal];
         ViewRadius(btn, buttonHeight/2.0);
+        [btn addTarget:self action:@selector(registerAction:) forControlEvents:UIControlEventTouchUpInside];
         btn;
     });
     [self addSubview:_registerBtn];
@@ -52,7 +53,8 @@
         [btn setTitleColor:darkColor forState:UIControlStateNormal];
         [btn setTitle:@"登录" forState:UIControlStateNormal];
         ViewBorderRadius(btn, buttonHeight/2.0, VMargin1, darkColor);
-            btn;
+        [btn addTarget:self action:@selector(loginAction:) forControlEvents:UIControlEventTouchUpInside];
+        btn;
     });
     
     [self addSubview:_signInBtn];
@@ -61,6 +63,19 @@
     _signInBtn.origin = CGPointMake(CGRectGetMaxX(_registerBtn.frame)+spaceX, (self.height - _signInBtn.height)/2.0);
 }
 
+- (void)registerAction:(UIButton*)btn
+{
+    if (self.block) {
+        self.block(ActionTypeRegister);
+    }
+}
+
+- (void)loginAction:(UIButton*)btn
+{
+    if (self.block) {
+        self.block(ActionTypeLogin);
+    }
+}
 
 
 @end
