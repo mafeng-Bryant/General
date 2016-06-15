@@ -13,6 +13,7 @@
 		E26B294A1D0FF46900FBE039 /* MFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26B29481D0FF46900FBE039 /* MFLoginViewController.xib */; };
 		E26B294E1D0FF52700FBE039 /* MFRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B294C1D0FF52700FBE039 /* MFRegisterViewController.m */; };
 		E26B294F1D0FF52700FBE039 /* MFRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26B294D1D0FF52700FBE039 /* MFRegisterViewController.xib */; };
+		E26B29521D0FFD5300FBE039 /* MFBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B29511D0FFD5300FBE039 /* MFBaseNavigationController.m */; };
 		E26D6F4D1CF034E600CCDD6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F4C1CF034E600CCDD6A /* main.m */; };
 		E26D6F591CF034E600CCDD6A /* General.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F571CF034E600CCDD6A /* General.xcdatamodeld */; };
 		E26D6F5B1CF034E600CCDD6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F5A1CF034E600CCDD6A /* Images.xcassets */; };
@@ -115,6 +116,8 @@
 		E26B294B1D0FF52700FBE039 /* MFRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRegisterViewController.h; sourceTree = "<group>"; };
 		E26B294C1D0FF52700FBE039 /* MFRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRegisterViewController.m; sourceTree = "<group>"; };
 		E26B294D1D0FF52700FBE039 /* MFRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFRegisterViewController.xib; sourceTree = "<group>"; };
+		E26B29501D0FFD5300FBE039 /* MFBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBaseNavigationController.h; sourceTree = "<group>"; };
+		E26B29511D0FFD5300FBE039 /* MFBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBaseNavigationController.m; sourceTree = "<group>"; };
 		E26D6F481CF034E600CCDD6A /* General.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = General.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26D6F4C1CF034E600CCDD6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E26D6F581CF034E600CCDD6A /* General.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = General.xcdatamodel; sourceTree = "<group>"; };
@@ -625,6 +628,8 @@
 			children = (
 				E2D6C4191D0EBB7A004B6942 /* MFBaseViewController.h */,
 				E2D6C41A1D0EBB7A004B6942 /* MFBaseViewController.m */,
+				E26B29501D0FFD5300FBE039 /* MFBaseNavigationController.h */,
+				E26B29511D0FFD5300FBE039 /* MFBaseNavigationController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -938,6 +943,7 @@
 				E2D6C4131D0EA585004B6942 /* PPFileHelper.m in Sources */,
 				E29700221CF437A800C49658 /* AppDelegate.m in Sources */,
 				E29700391CF4489100C49658 /* PPRequest.m in Sources */,
+				E26B29521D0FFD5300FBE039 /* MFBaseNavigationController.m in Sources */,
 				E29700691CF453E400C49658 /* PPCommonHeadersGenerator.m in Sources */,
 				E29700421CF449F600C49658 /* MFNetworkingLogger.m in Sources */,
 				E26B294E1D0FF52700FBE039 /* MFRegisterViewController.m in Sources */,

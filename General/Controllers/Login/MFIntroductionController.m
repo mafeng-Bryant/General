@@ -12,7 +12,7 @@
 #import "MFGuideSlideBottomView.h"
 #import "MFLoginViewController.h"
 #import "MFRegisterViewController.h"
-
+#import "MFBaseNavigationController.h"
 
 @interface MFIntroductionController ()<UIScrollViewDelegate>
 {
@@ -115,17 +115,19 @@
     if (!_bottomView) {
         _bottomView = [[MFGuideSlideBottomView alloc]initWithFrame:self.view.bounds];
         _bottomView.backgroundColor = [UIColor clearColor];
-         __weak MFIntroductionController *weakSelf = self;
+        __weak MFIntroductionController *weakSelf = self;
         _bottomView.block = ^(ActionType type){
             if (type == ActionTypeRegister) {
-                MFRegisterViewController* registerVC = [[MFRegisterViewController alloc]initWithNibName:@"MFRegisterViewController" bundle:nil];
-                [weakSelf presentViewController:registerVC animated:YES completion:nil];
+                MFRegisterViewController* registerVC = [[MFRegisterViewController alloc]initWithRegisterType:RegisterTypePhone];
+                MFBaseNavigationController* nav = [[MFBaseNavigationController alloc]initWithRootViewController:registerVC];
+                [weakSelf presentViewController:nav animated:YES completion:nil];
             }else if (type ==ActionTypeLogin){
                 MFLoginViewController* loginVC = [[MFLoginViewController alloc]initWithNibName:@"MFLoginViewController" bundle:nil];
-                [weakSelf presentViewController:loginVC animated:YES completion:nil];
+                MFBaseNavigationController* nav = [[MFBaseNavigationController alloc]initWithRootViewController:loginVC];
+                [weakSelf presentViewController:nav animated:YES completion:nil];
             }
-         };
-      }
+        };
+    }
     _bottomView.y = self.view.height - _bottomView.height;
     return _bottomView;
 }

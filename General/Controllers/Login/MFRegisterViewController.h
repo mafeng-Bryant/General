@@ -7,7 +7,20 @@
 //
 
 #import "MFBaseViewController.h"
+#import "TPKeyboardAvoidingTableView.h"
+
+typedef enum {
+    RegisterTypeEmail = 0,
+    RegisterTypePhone = 1
+}RegisterType;
+
 
 @interface MFRegisterViewController : MFBaseViewController
+
+-(instancetype)initWithRegisterType:(RegisterType)type;
+
+@property (weak, nonatomic) IBOutlet TPKeyboardAvoidingTableView *tableView;
+
+
 
 @end

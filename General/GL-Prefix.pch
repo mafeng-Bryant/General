@@ -30,6 +30,7 @@
 #import "UIImageView+WebCache.h"
 #import "PPFileHelper.h"
 #import "MFSetting.h"
+#import "Masonry.h"
 
 
 #endif
