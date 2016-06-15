@@ -108,7 +108,6 @@
 
 -(void)drawRect:(CGRect)rect
 {
-    CGSize frameSize = self.frame.size;
     
     
     
