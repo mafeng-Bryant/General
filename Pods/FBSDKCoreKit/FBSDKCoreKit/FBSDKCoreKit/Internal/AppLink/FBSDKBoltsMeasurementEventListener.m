@@ -43,6 +43,7 @@ static NSString *const BoltsMeasurementEventPrefix = @"bf_";
     return defaultListener;
 }
 
+
 - (void)logFBAppEventForNotification:(NSNotification *)note
 {
     // when catch al_nav_in event, we set source application for FBAppEvents.
