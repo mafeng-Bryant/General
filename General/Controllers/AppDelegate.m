@@ -28,7 +28,6 @@
     //netWork 网络活动显示器
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    
     //配置页面
     [self configureViewController];
     
