@@ -6,7 +6,10 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'General' do
-    
+
+  pod 'FBSDKCoreKit’,  ‘4.20.2’
+  pod 'FBSDKLoginKit', ‘4.20.2’
+  pod 'FBSDKShareKit', ‘4.20.2’
   pod 'AFNetworking', '2.5.4'
   pod 'TPKeyboardAvoiding'
   pod 'SDWebImage'

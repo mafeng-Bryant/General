@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4795D8BE251B21EFB903B770043EE9AB'
+               BlueprintIdentifier = '8166BE479752AEC898B9288735C34F04'
                BlueprintName = 'VFileManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'VFileManager.framework'>
